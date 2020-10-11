@@ -1,5 +1,13 @@
 let primeironome = prompt("Digite seu primeiro nome.");
-let sobrenome = prompt("Digite seu sobrenome.");
-    
-alert(`Nome Completo: ${primeironome} ${sobrenome}.`);
-alert(`Nome de catálogo: ${sobrenome.toUpperCase()}, ${primeironome}.`)
+if (primeironome) { 
+        let sobrenome = prompt("Digite seu sobrenome.");
+    if (sobrenome) {
+        alert(`Nome Completo: ${primeironome} ${sobrenome}.`);
+        alert(`Nome de catálogo: ${sobrenome.toUpperCase()}, ${primeironome}.`);
+    } else {
+        close();
+    }
+}
+else {
+    close ();
+}
